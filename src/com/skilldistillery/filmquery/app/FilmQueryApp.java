@@ -61,7 +61,7 @@ public class FilmQueryApp {
 				System.out.println(film);
 
 			} else {
-				System.err.println("Does not exist");
+				System.err.println("No film found, try again");
 			}
 		} catch (Exception e) {
 			System.err.println("Invalid input");
@@ -81,7 +81,7 @@ public class FilmQueryApp {
 
 				}
 			} else {
-				System.err.println("Does not exist");
+				System.err.println("Search returned to no results");
 			}
 		} catch (Exception e) {
 			System.err.println("Invalid input");
