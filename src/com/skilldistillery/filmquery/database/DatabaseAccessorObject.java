@@ -101,8 +101,8 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 		try {
 			conn = DriverManager.getConnection(URL, user, pass);
 			PreparedStatement stmt = conn.prepareStatement(sql);
-			stmt.setString(1, "% " + keywords + " %");
-			stmt.setString(2, "% " + keywords + " %");
+			stmt.setString(1, "%" + keywords + "%");
+			stmt.setString(2, "%" + keywords + "%");
 			ResultSet filmResult = stmt.executeQuery();
 
 			while (filmResult.next()) {
